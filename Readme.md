@@ -7,17 +7,18 @@
 ## Usage
 
 ```js
-var webpack = require('webpack');
 var SystemBellPlugin = require('system-bell-webpack-plugin');
 
 // webpack configuration
 var config = {
 	entry: …,
-	output: { … },
+	output: {
+		path: …,
+		filename: …
+	},
 	plugins: [
 		new SystemBellPlugin()
-	],
-	// …
+	]
 };
 module.exports = config;
 ```
